@@ -38,8 +38,8 @@ jobs:
           file: ./docker/Dockerfile.staging
           push: true
           tags: |
-            tahsinuldev/hubspot-company-nomad-deployment:staging
-            tahsinuldev/hubspot-company-nomad-deployment:${{ github.sha }}
+            TAHSINULDEV/hubspot-company-nomad-deployment:staging
+            TAHSINULDEV/hubspot-company-nomad-deployment:${{ github.sha }}
 
       - name: Deploy to Nomad
         run: |
