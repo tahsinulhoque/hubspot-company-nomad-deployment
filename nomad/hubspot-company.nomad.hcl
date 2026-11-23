@@ -30,9 +30,9 @@ job "hubspot-company" {
       driver = "docker"
 
       config {
-        image      = "hubspot-company:staging"
+        image      = "tahsinuldev/hubspot-company-nomad-deployment:staging"
         ports      = ["http"]
-        force_pull = false
+        force_pull = true
       }
 
       env {
